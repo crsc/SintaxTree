@@ -2,23 +2,23 @@
  * To change this template, choose Tools | Templates
  * and open the template in the editor.
  */
-package BinaryOperationNodes;
+package BinaryRealOperationNodes;
 
-import BinaryOperationNodes.BinaryOperationNode;
-import Nodes.Node;
+import BinaryRealOperationNodes.BinaryOperationNode;
+import RealNodes.Node;
 
 /**
  *
  * @author Cristian
  */
-public class MultiplicationNode extends BinaryOperationNode{
+public class MultiplicationOperatorNode extends BinaryOperationNode{
     
-    public MultiplicationNode(Node leftNode, Node rightNode){
+    public MultiplicationOperatorNode(Node leftNode, Node rightNode){
         super(leftNode,rightNode);
     }
     
     @Override
-    public int evaluate() {
+    public double evaluate() {
         return (getLeftNode().evaluate()*getRightNode().evaluate());
     }
 }

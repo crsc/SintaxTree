@@ -2,10 +2,10 @@
  * To change this template, choose Tools | Templates
  * and open the template in the editor.
  */
-package BinaryOperationNodes;
+package BinaryRealOperationNodes;
 
-import Nodes.Node;
-import Nodes.OperationNode;
+import RealNodes.Node;
+import RealNodes.OperationNode;
 
 /**
  *

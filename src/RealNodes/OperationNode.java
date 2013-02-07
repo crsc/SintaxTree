@@ -2,12 +2,12 @@
  * To change this template, choose Tools | Templates
  * and open the template in the editor.
  */
-package Nodes;
+package RealNodes;
 
 /**
  *
  * @author Cristian
  */
-public abstract class Node {
-    public abstract int evaluate();
+public abstract class OperationNode extends Node{
+    
 }

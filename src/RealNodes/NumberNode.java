@@ -2,20 +2,20 @@
  * To change this template, choose Tools | Templates
  * and open the template in the editor.
  */
-package Nodes;
+package RealNodes;
 
 /**
  *
  * @author Cristian
  */
 public class NumberNode extends Node{
-    private int number;
+    private double number;
     
-    public NumberNode(int number){
+    public NumberNode(double number){
         this.number=number;
     }
 
-    public int evaluate(){
+    public double evaluate(){
         return this.number;
     }
 

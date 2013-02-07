@@ -2,10 +2,10 @@
  * To change this template, choose Tools | Templates
  * and open the template in the editor.
  */
-package UnaryOperationNodes;
+package UnaryRealOperationNodes;
 
-import Nodes.Node;
-import Nodes.OperationNode;
+import RealNodes.Node;
+import RealNodes.OperationNode;
 
 /**
  *
@@ -21,6 +21,5 @@ public abstract class UnaryOperationNode extends OperationNode{
     public Node getChildren() {
         return children;
     }
-    
     //TODO unary operations
 }
