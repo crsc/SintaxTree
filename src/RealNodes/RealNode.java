@@ -8,6 +8,6 @@ package RealNodes;
  *
  * @author Cristian
  */
-public abstract class OperationNode extends Node{
-    
+public abstract class RealNode {
+    public abstract double evaluate();
 }

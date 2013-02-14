@@ -4,27 +4,27 @@
  */
 package BinaryRealOperationNodes;
 
-import RealNodes.Node;
-import RealNodes.OperationNode;
+import RealNodes.RealNode;
+import RealNodes.RealOperationNode;
 
 /**
  *
  * @author Cristian
  */
-public abstract class BinaryOperationNode extends OperationNode{
-    private Node leftNode;
-    private Node rightNode;
+public abstract class BinaryOperationNode extends RealOperationNode{
+    private RealNode leftNode;
+    private RealNode rightNode;
 
-    public BinaryOperationNode(Node leftNode, Node rightNode) {
+    public BinaryOperationNode(RealNode leftNode, RealNode rightNode) {
         this.leftNode = leftNode;
         this.rightNode = rightNode;
     }
 
-    public Node getLeftNode() {
+    public RealNode getLeftNode() {
         return leftNode;
     }
 
-    public Node getRightNode() {
+    public RealNode getRightNode() {
         return rightNode;
     }
     

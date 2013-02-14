@@ -4,21 +4,21 @@
  */
 package UnaryRealOperationNodes;
 
-import RealNodes.Node;
-import RealNodes.OperationNode;
+import RealNodes.RealNode;
+import RealNodes.RealOperationNode;
 
 /**
  *
  * @author Cristian
  */
-public abstract class UnaryOperationNode extends OperationNode{
-    private Node children;
+public abstract class UnaryRealOperationNode extends RealOperationNode{
+    private RealNode children;
     
-    public UnaryOperationNode(Node children){
+    public UnaryRealOperationNode(RealNode children){
         this.children=children;
     }
 
-    public Node getChildren() {
+    public RealNode getChildren() {
         return children;
     }
     //TODO unary operations

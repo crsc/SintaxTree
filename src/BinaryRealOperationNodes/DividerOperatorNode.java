@@ -4,7 +4,7 @@
  */
 package BinaryRealOperationNodes;
 
-import RealNodes.Node;
+import RealNodes.RealNode;
 
 /**
  *
@@ -12,7 +12,7 @@ import RealNodes.Node;
  */
 public class DividerOperatorNode extends BinaryOperationNode{
 
-    public DividerOperatorNode(Node leftNode, Node rightNode) {
+    public DividerOperatorNode(RealNode leftNode, RealNode rightNode) {
         super(leftNode, rightNode);
     }
 

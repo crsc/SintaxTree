@@ -5,7 +5,7 @@
 package BinaryRealOperationNodes;
 
 import BinaryRealOperationNodes.BinaryOperationNode;
-import RealNodes.Node;
+import RealNodes.RealNode;
 
 /**
  *
@@ -13,7 +13,7 @@ import RealNodes.Node;
  */
 public class MultiplicationOperatorNode extends BinaryOperationNode{
     
-    public MultiplicationOperatorNode(Node leftNode, Node rightNode){
+    public MultiplicationOperatorNode(RealNode leftNode, RealNode rightNode){
         super(leftNode,rightNode);
     }
     

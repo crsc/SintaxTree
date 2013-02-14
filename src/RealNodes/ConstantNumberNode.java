@@ -8,17 +8,15 @@ package RealNodes;
  *
  * @author Cristian
  */
-public class ConstantNumberNode extends Node{
+public class ConstantNumberNode extends RealNode{
+    private double number;
     
-    double constant;
+    public ConstantNumberNode(double number){
+        this.number=number;
+    }
 
-    public ConstantNumberNode(double constant) {
-        this.constant = constant;
+    public double evaluate(){
+        return this.number;
     }
-    
-    @Override
-    public double evaluate() {
-        return this.constant;
-    }
-    
+
 }

@@ -8,7 +8,7 @@ package RealNodes;
  *
  * @author Cristian
  */
-public class VariableNumberNode extends Node{
+public class VariableNumberNode extends RealNode{
 
     double variable;
 

@@ -4,9 +4,9 @@
  */
 package sintaxtree;
 
-import RealNodes.NumberNode;
+import RealNodes.ConstantNumberNode;
 import BinaryRealOperationNodes.SumOperatorNode;
-import RealNodes.Node;
+import RealNodes.RealNode;
 import BinaryRealOperationNodes.MultiplicationOperatorNode;
 import LogicNodes.AndLogicOperatorNode;
 import LogicNodes.LogicBinaryOperatorNode;
@@ -25,12 +25,12 @@ public class SintaxTree {
      */
     public static void main(String[] args) {
         // TODO code application logic here
-        Node num1 = new NumberNode(1);
-        Node num2 = new NumberNode(2);
-        Node num3 = new NumberNode(3);
+        RealNode num1 = new ConstantNumberNode(1);
+        RealNode num2 = new ConstantNumberNode(2);
+        RealNode num3 = new ConstantNumberNode(3);
         
-        Node multiplicacion = new MultiplicationOperatorNode(num2, num3);
-        Node suma = new SumOperatorNode(num1,multiplicacion);
+        RealNode multiplicacion = new MultiplicationOperatorNode(num2, num3);
+        RealNode suma = new SumOperatorNode(num1,multiplicacion);
         
         System.out.println(suma.evaluate());
         
