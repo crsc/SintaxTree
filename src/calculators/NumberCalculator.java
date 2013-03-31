@@ -1,5 +1,8 @@
 package calculators;
 
+import types.Type;
+import types.DoubleType;
+import types.IntegerType;
 import anotations.OperatorSymbol;
 import tree.*;
 

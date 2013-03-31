@@ -1,5 +1,5 @@
 
-package tree;
+package types;
 
 public class DoubleType extends Type<Double>{
 

@@ -1,5 +1,7 @@
 package tree;
 
+import types.Type;
+
 public class Constant extends Token {
     private Type value;
 

@@ -1,5 +1,8 @@
 package tree;
 
+import types.Type;
+import types.DoubleType;
+import types.IntegerType;
 import calculators.*;
 import calculators.NumberCalculator;
 import java.lang.reflect.Method;
@@ -44,23 +47,13 @@ public class BinaryOperation extends Operation {
         if (calculator == null) return null;
         try {
             Method method = calculator.getClass().getMethod(operation.getName(), left.getClass(), right.getClass());
-            return castToType(method.invoke(calculator, left, right));
+            return (Type)(method.invoke(calculator, left, right));
         }
         catch (Exception ex) {
             System.out.println(ex);
             return null;
         }
         
-    }
-    
-    private Type castToType(Object obj){
-        if (obj instanceof DoubleType){
-            return (DoubleType)obj;
-        }
-        if (obj instanceof IntegerType){
-            return (IntegerType)obj;
-        }
-        return null;
     }
 
 }
