@@ -9,14 +9,14 @@ public class drawingTest {
 
     @Test
     public void testIntegerToString() {
-        IntegerType Arg1 = new IntegerType(2);
-        assertEquals("2",Arg1.toString());
+        IntegerType arg1 = new IntegerType(2);
+        assertEquals("2",arg1.toString());
     }
     
     @Test
     public void testDoubleToString() {
-        DoubleType Arg1 = new DoubleType(2.0);
-        assertEquals("2.0",Arg1.toString());
+        DoubleType arg1 = new DoubleType(2.0);
+        assertEquals("2.0",arg1.toString());
     }
     
     @Test
