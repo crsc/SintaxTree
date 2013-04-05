@@ -2,7 +2,6 @@ package tree;
 
 import org.junit.Test;
 import static org.junit.Assert.*;
-import static org.mockito.Mockito.*;
 import types.IntegerType;
 import types.DoubleType;
 
@@ -22,9 +21,12 @@ public class drawingTest {
     
     @Test
     public void testBinaryOperationToString() {
-        BinaryOperation mockArg1 = mock(BinaryOperation.class);
-        when(mockArg1.toString()).thenReturn("2+3*5");
-        assertEquals("2+3*5",mockArg1.toString());
+        Constant c1 = new Constant(new IntegerType(2));
+        Constant c2 = new Constant(new IntegerType(3));
+        Constant c3 = new Constant(new IntegerType(5));
+        BinaryOperation Operation1 = new BinaryOperation(Operator.product, c2, c3);
+        BinaryOperation Operation2 = new BinaryOperation(Operator.add, c1, Operation1);
+        assertEquals("(2+(3*5))",Operation2.toString());
     }
     
 }

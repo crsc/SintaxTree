@@ -18,6 +18,8 @@ public class Constant extends Token {
         return getValue();
     }
     
-    
+    public String toString(){
+        return value.toString();
+    }
     
 }

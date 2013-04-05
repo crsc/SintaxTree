@@ -40,5 +40,10 @@ public class BinaryOperation extends Operation {
         String signature = operation.getName()+ left.getClass().getSimpleName()+right.getClass().getSimpleName();
         return signature;
     }
+    
+    @Override
+    public String toString() {
+        return "("+leftChild.toString()+operation.getOperator()+rightChild.toString()+")";
+    }
 
 }
