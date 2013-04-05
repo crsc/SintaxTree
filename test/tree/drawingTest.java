@@ -3,22 +3,21 @@ package tree;
 import org.junit.Test;
 import static org.junit.Assert.*;
 import static org.mockito.Mockito.*;
-import types.*;
+import types.IntegerType;
+import types.DoubleType;
 
 public class drawingTest {
 
     @Test
     public void testIntegerToString() {
-        IntegerType mockArg1 = mock(IntegerType.class);
-        when(mockArg1.toString()).thenReturn("2");
-        assertEquals("2",mockArg1.toString());
+        IntegerType Arg1 = new IntegerType(2);
+        assertEquals("2",Arg1.toString());
     }
     
     @Test
     public void testDoubleToString() {
-        DoubleType mockArg1 = mock(DoubleType.class);
-        when(mockArg1.toString()).thenReturn("2.0");
-        assertEquals("2.0",mockArg1.toString());
+        DoubleType Arg1 = new DoubleType(2.0);
+        assertEquals("2.0",Arg1.toString());
     }
     
     @Test
