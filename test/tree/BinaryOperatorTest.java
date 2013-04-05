@@ -3,11 +3,6 @@ package tree;
 import types.Type;
 import types.IntegerType;
 import types.DoubleType;
-import tree.Operator;
-import org.junit.After;
-import org.junit.AfterClass;
-import org.junit.Before;
-import org.junit.BeforeClass;
 import org.junit.Test;
 import static org.junit.Assert.*;
 

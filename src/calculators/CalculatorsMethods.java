@@ -1,15 +1,11 @@
 
 package calculators;
 
-import calculators.*;
-import java.lang.reflect.Method;
-import java.util.HashMap;
 import java.util.Set;
 import org.reflections.Reflections;
 import org.reflections.util.ClasspathHelper;
 import org.reflections.util.ConfigurationBuilder;
 import anotations.*;
-import java.util.Iterator;
 import java.lang.reflect.Method;
 import java.util.HashMap;
 

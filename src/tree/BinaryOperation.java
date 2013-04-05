@@ -1,14 +1,9 @@
 package tree;
 
 import types.Type;
-import types.DoubleType;
-import types.IntegerType;
 import calculators.*;
-import calculators.NumberCalculator;
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
-import java.util.logging.Level;
-import java.util.logging.Logger;
 
 
 public class BinaryOperation extends Operation {
